@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useFeaturedSkills, useSkillOfTheDay, useCategories } from '../hooks/useSkills';
+import { useFeaturedSkills, useCategories } from '../hooks/useSkills';
 import SkillGrid from '../components/skill/SkillGrid';
 import SkillOfTheDay from '../components/skill/SkillOfTheDay';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,4 @@
 import { useAuth } from '../hooks/useAuth';
-import { useTranslation } from 'react-i18next';
 import { useQuery } from '@tanstack/react-query';
 import api from '../lib/api';
 import SkillGrid from '../components/skill/SkillGrid';
@@ -7,7 +6,6 @@ import { formatDate } from '../lib/utils';
 
 export default function Profile() {
   const { user } = useAuth();
-  const { t } = useTranslation();
 
   const { data: profile } = useQuery({
     queryKey: ['profile', user?.id],
