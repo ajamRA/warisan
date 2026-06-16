@@ -1,6 +1,5 @@
 import { db } from '../config/database.js';
 import { generateSkillPDF } from '../utils/pdf.js';
-import { Skill } from '../../../shared/types.js';
 
 export async function getSkillForExport(id: string) {
   return db('skills')
@@ -18,7 +17,7 @@ export async function getSkillForExport(id: string) {
 export async function generatePDF(id: string): Promise<Buffer> {
   const skill = await getSkillForExport(id);
   if (!skill) throw new Error('Skill not found');
-  return generateSkillPDF(skill as Skill);
+  return generateSkillPDF(skill);
 }
 
 export async function generateOfflineHTML(id: string): Promise<string> {

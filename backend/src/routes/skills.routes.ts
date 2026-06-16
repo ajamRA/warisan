@@ -105,7 +105,8 @@ router.post('/:id/images', requireAuth, upload.single('image'), async (req, res)
       return;
     }
     const { addSkillImage } = await import('../services/upload.service.js');
-    const image = await addSkillImage(req.params.id, `/uploads/${req.file.filename}`, req.body.alt_text);
+    const id = req.params.id as string;
+    const image = await addSkillImage(id, `/uploads/${req.file.filename}`, req.body.alt_text);
     res.status(201).json(image);
   } catch (error: any) {
     res.status(400).json({ error: error.message });
@@ -114,7 +115,8 @@ router.post('/:id/images', requireAuth, upload.single('image'), async (req, res)
 
 router.post('/:id/bookmark', requireAuth, async (req, res) => {
   try {
-    const bookmarked = await skillsService.bookmarkSkill(req.params.id, req.user!.userId);
+    const id = req.params.id as string;
+    const bookmarked = await skillsService.bookmarkSkill(id, req.user!.userId);
     res.json({ bookmarked });
   } catch (error: any) {
     res.status(400).json({ error: error.message });
@@ -123,7 +125,8 @@ router.post('/:id/bookmark', requireAuth, async (req, res) => {
 
 router.put('/:id', requireAuth, async (req, res) => {
   try {
-    const skill = await skillsService.updateSkill(req.params.id, req.body, req.user!.userId);
+    const id = req.params.id as string;
+    const skill = await skillsService.updateSkill(id, req.body, req.user!.userId);
     res.json(skill);
   } catch (error: any) {
     if (error.message === 'Skill not found') {
@@ -136,7 +139,8 @@ router.put('/:id', requireAuth, async (req, res) => {
 
 router.delete('/:id', requireAuth, requireRole('admin'), async (req, res) => {
   try {
-    await skillsService.deleteSkill(req.params.id);
+    const id = req.params.id as string;
+    await skillsService.deleteSkill(id);
     res.status(204).send();
   } catch (error: any) {
     res.status(400).json({ error: error.message });

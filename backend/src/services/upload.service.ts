@@ -2,7 +2,15 @@ import { db } from '../config/database.js';
 import sharp from 'sharp';
 import path from 'path';
 
-export async function processUpload(file: Express.Multer.File) {
+interface MulterFile {
+  filename: string;
+  path: string;
+  originalname: string;
+  size: number;
+  mimetype: string;
+}
+
+export async function processUpload(file: MulterFile) {
   const processedFilename = `processed_${file.filename}`;
   const processedPath = path.join('uploads', processedFilename);
 

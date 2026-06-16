@@ -1,7 +1,16 @@
 import PDFDocument from 'pdfkit';
-import { Skill } from '../../../shared/types.js';
 
-export function generateSkillPDF(skill: Skill): Promise<Buffer> {
+interface SkillData {
+  title: string;
+  description: string;
+  category_id?: string;
+  difficulty?: string;
+  learning_time?: string;
+  country?: string;
+  content_markdown: string;
+}
+
+export function generateSkillPDF(skill: SkillData): Promise<Buffer> {
   return new Promise((resolve, reject) => {
     const doc = new PDFDocument({ size: 'A4', margin: 50 });
     const chunks: Buffer[] = [];
