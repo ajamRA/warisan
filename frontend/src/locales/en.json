@@ -1,0 +1,10 @@
+{
+  "app": { "name": "Warisan", "tagline": "Library of Human Skills" },
+  "nav": { "home": "Home", "search": "Search", "submit": "Submit Skill", "map": "Map", "about": "About", "login": "Login", "register": "Register", "profile": "Profile", "logout": "Logout" },
+  "home": { "featured": "Featured Skills", "skillOfDay": "Skill of the Day", "categories": "Browse Categories", "latest": "Latest Skills" },
+  "skill": { "difficulty": "Difficulty", "learningTime": "Learning Time", "country": "Country", "language": "Language", "steps": "Step-by-Step Instructions", "related": "Related Skills", "versions": "Version History", "bookmark": "Bookmark", "share": "Share", "export": "Export" },
+  "search": { "placeholder": "Search skills...", "noResults": "No skills found", "filters": "Filters" },
+  "auth": { "loginTitle": "Welcome Back", "registerTitle": "Join Warisan", "email": "Email", "password": "Password", "name": "Name", "submit": "Submit" },
+  "submit": { "title": "Submit a Skill", "description": "Share your knowledge with the world" },
+  "footer": { "mission": "Preserving and sharing practical human knowledge and traditional skills." }
+}

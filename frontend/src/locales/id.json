@@ -1,0 +1,10 @@
+{
+  "app": { "name": "Warisan", "tagline": "Perpustakaan Keterampilan Manusia" },
+  "nav": { "home": "Beranda", "search": "Cari", "submit": "Kirim Keterampilan", "map": "Peta", "about": "Tentang", "login": "Masuk", "register": "Daftar", "profile": "Profil", "logout": "Keluar" },
+  "home": { "featured": "Keterampilan Unggulan", "skillOfDay": "Keterampilan Hari Ini", "categories": "Jelajahi Kategori", "latest": "Keterampilan Terbaru" },
+  "skill": { "difficulty": "Tingkat Kesulitan", "learningTime": "Waktu Belajar", "country": "Negara", "language": "Bahasa", "steps": "Panduan Langkah demi Langkah", "related": "Keterampilan Terkait", "versions": "Riwayat Versi", "bookmark": "Penanda", "share": "Bagikan", "export": "Ekspor" },
+  "search": { "placeholder": "Cari keterampilan...", "noResults": "Tidak ada keterampilan ditemukan", "filters": "Filter" },
+  "auth": { "loginTitle": "Selamat Datang Kembali", "registerTitle": "Bergabung dengan Warisan", "email": "Email", "password": "Kata Sandi", "name": "Nama", "submit": "Kirim" },
+  "submit": { "title": "Kirim Keterampilan", "description": "Bagikan pengetahuan Anda dengan dunia" },
+  "footer": { "mission": "Melestarikan dan membagikan pengetahuan dan keterampilan tradisional manusia." }
+}

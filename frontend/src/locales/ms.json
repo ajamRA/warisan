@@ -1,0 +1,10 @@
+{
+  "app": { "name": "Warisan", "tagline": "Perpustakaan Kemahiran Manusia" },
+  "nav": { "home": "Utama", "search": "Cari", "submit": "Hantar Kemahiran", "map": "Peta", "about": "Tentang", "login": "Log Masuk", "register": "Daftar", "profile": "Profil", "logout": "Log Keluar" },
+  "home": { "featured": "Kemahiran Pilihan", "skillOfDay": "Kemahiran Hari Ini", "categories": "Lihat Kategori", "latest": "Kemahiran Terkini" },
+  "skill": { "difficulty": "Tahap Kesukaran", "learningTime": "Masa Pembelajaran", "country": "Negara", "language": "Bahasa", "steps": "Arahan Langkah demi Langkah", "related": "Kemahiran Berkaitan", "versions": "Sejarah Versi", "bookmark": "Penanda", "share": "Kongsi", "export": "Eksport" },
+  "search": { "placeholder": "Cari kemahiran...", "noResults": "Tiada kemahiran dijumpai", "filters": "Penapis" },
+  "auth": { "loginTitle": "Selamat Kembali", "registerTitle": "Sertai Warisan", "email": "E-mel", "password": "Kata Laluan", "name": "Nama", "submit": "Hantar" },
+  "submit": { "title": "Hantar Kemahiran", "description": "Kongsi pengetahuan anda dengan dunia" },
+  "footer": { "mission": "Memelihara dan berkongsi pengetahuan dan kemahiran tradisional manusia." }
+}
